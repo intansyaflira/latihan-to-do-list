@@ -1,0 +1,99 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #efb5f1;
+}
+.list
+{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+}
+.list h2
+{
+    background:rgb(65, 219, 219);
+    color:rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.list ul
+{
+    position: relative;
+    padding: 20px;
+}
+.list ul li
+{
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border: 1px solid rgba(red, green, blue, alpha)
+}
+.list ul li:last-child
+{
+    border-bottom: none;
+}
+.list ul li label
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.list ul li label input
+{
+    visibility: hidden;
+    appearance: none;
+}
+.list ul li label p
+{
+    position: absolute;
+}
+.list ul li label span
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list ul li label span:before
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg);
+}
+.list ul li label input:checked ~ p
+{
+    text-decoration: line-through;
+    color: #ccc;
+}
+.list ul li label input:checked ~ span
+{
+    background: cornflowerblue;
+    border: 1px solid cornflowerblue;
+
+}
+.list ul li label input:checked ~ span::before
+{
+    border-left: 2px solid #fff;
+    border-bottom: 2pxsolid #fff;
+}
